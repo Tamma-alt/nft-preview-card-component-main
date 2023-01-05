@@ -29,11 +29,11 @@ img {
 }
 
 .card {
-  width: 50%;
+  width: 70%;
   height: 100vh;
   margin: 0 auto;
   background-color: var(--Very-dark-blue-card-BG);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   overflow: hidden;
 
   padding: 1rem;
@@ -41,43 +41,101 @@ img {
   font-family: "Outfit", sans-serif;
 }
 
+.nft-img {
+  padding: .5rem;
+  border-radius: 1rem;
+
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.view{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.nft-content:hover .nft-img{
+  opacity: .3;
+}
+
+.nft-content:hover .active{
+  opacity: 1;
+}
+
+
+
+
+
 .text {
   padding: 0.5rem;
   margin: 1rem 0;
-  font-size: medium;
+  font-size: 1rem;
 }
 
-.sect {
+.text h1{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.text p{
+  margin: 1rem 0;
+  line-height: 1.5rem;
+  color: var(--Soft-blue);
+}
+
+.section2{
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+  align-items: center;
 }
 
-.sect h3 {
+.section2 h3 {
   color: var(--Cyan);
   font-size: medium;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .sect img {
-  margin-right: 0.2rem;
+  margin-top: .2rem;
+  margin-right: .2rem;
 }
 
-.nft-img {
-  padding: 1rem;
-  border-radius: 2rem;
+.flex{
+  display: flex;
+  gap: .2rem;
+  align-items: center;
+}
+
+
+.line {
+  border: 1px solid var(--Very-dark-blue-line);
 }
 
 .creator{
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
+    gap: 1rem;
     align-items: center;
-    margin-top: 2rem;
+    margin: 1rem 0;
+}
+
+.creator p span{
+  color: var(--Soft-blue);
 }
 
 .avatar {
-  width: 15%;
-  border: 1px solid var(--White);
+  width: 10%;
+  border: .12rem solid var(--White);
   border-radius: 2rem;
 }
 
@@ -89,3 +147,4 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
