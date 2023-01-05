@@ -148,3 +148,13 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
+
+/* medium and large screen sizes */
+
+.card {
+  width: 50%;
+  height: auto;
+
+  padding: 1rem;
+  font-family: "Outfit", sans-serif;
+}
